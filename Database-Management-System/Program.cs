@@ -13,14 +13,7 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
-//enable google auth
-//adding some changes
-var configuration = builder.Configuration;
-builder.Services.AddAuthentication().AddGoogle(option =>
-{
-    option.ClientId = configuration["Authentication:Google:ClientId"];
-    option.ClientSecret = configuration["Authentication:Google:ClientSecret"];
-});
+
 
 var app = builder.Build();
 
