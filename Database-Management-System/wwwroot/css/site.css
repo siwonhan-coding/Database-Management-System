@@ -128,24 +128,10 @@ footer {
         border-color: #004085;
     }
 
-/* Responsive adjustments */
-@media (max-width: 767px) {
-    .navbar {
-        padding: 10px;
-    }
 
-    .navbar-brand {
-        font-size: 1.3rem;
-    }
-
-    footer {
-        padding: 15px 0;
-    }
-}
-/*Student index page*/
 /* Student Page Styling */
 .student-page-container {
-    background-color: #f9f9f9;
+    background-color: #e6ffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -159,17 +145,18 @@ footer {
     margin-bottom: 20px;
 }
 
-.student-register-button {
+.student-register {
     font-size: 1.1rem;
     font-weight: 600;
     padding: 10px 20px;
+    background-color:blue;
 }
-    .student-register-button:hover{
-        background-color:black;
-        color: yellow;
-        text-decoration:underline;
-    }
 
+.student-register:hover{
+    background-color:black;
+    text-decoration:underline;
+    color: yellow;
+}
     .student-table {
         width: 100%;
         margin-top: 20px;
@@ -204,7 +191,7 @@ footer {
     }
 /* Course Page Styling */
 .course-page-container {
-    background-color: #f0f8ff;
+    background-color: #e6ffee;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -325,7 +312,7 @@ footer {
     }
 /* Course Registration Page Styling */
 .course-register-container {
-    background-color: #f0f8ff;
+    background-color: #e6ffee;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -450,23 +437,28 @@ footer {
     font-size: 1.1rem;
     padding: 10px 20px;
     font-weight: 600;
-    background-color: #28a745;
+    background-color: blue;
     border-color: #28a745;
-}
 
-.student-back-link {
-    display: inline-block;
-    margin-top: 20px;
-    color: #007bff;
-    text-decoration: none;
 }
+    .student-save-button:hover{
+        background-color:black;
+        color:yellow;
+        text-decoration:underline;
+    }
+    .student-back-link {
+        display: inline-block;
+        margin-top: 20px;
+        color: #007bff;
+        text-decoration: none;
+    }
 
     .student-back-link:hover {
         text-decoration: underline;
     }
 /* Course Edit Page Styling */
 .course-edit-container {
-    background-color: #f7e6ff;
+    background-color: #e6ffee;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -547,7 +539,7 @@ footer {
     }
 /* Student Details Page Styling */
 .student-details-container {
-    background-color: #ffffff;
+    background-color: #e6ffff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -590,12 +582,12 @@ footer {
         margin-right: 10px;
     }
 
-.btn-primary {
+.btn-primary-edit {
     background-color: #007bff;
     border-color: #007bff;
 }
 
-    .btn-primary:hover {
+    .btn-primary-edit:hover {
         background-color: #0056b3;
         border-color: #004085;
     }
@@ -611,7 +603,7 @@ footer {
     }
 /* Course Details Page Styling */
 .course-details-container {
-    background-color: #ffffff;
+    background-color: #e6ffee;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -621,7 +613,7 @@ footer {
 .course-details-title {
     font-size: 2rem;
     font-weight: bold;
-    color: #28a745; /* Green color to reflect a positive view */
+    color: #28a745;
     margin-bottom: 20px;
 }
 
@@ -654,12 +646,12 @@ footer {
         margin-right: 10px;
     }
 
-.btn-primary {
+.btn-primary-course {
     background-color: #28a745;
     border-color: #28a745;
 }
 
-    .btn-primary:hover {
+    .btn-primary-course:hover {
         background-color: #218838;
         border-color: #1e7e34;
     }
@@ -675,7 +667,7 @@ footer {
     }
 /* Delete Page Styling */
 .delete-confirmation-container {
-    background-color: #f8d7da; /* Light red background for warning */
+    background-color: #e6ffff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -688,7 +680,7 @@ footer {
 .delete-title {
     font-size: 2rem;
     font-weight: bold;
-    color: #721c24; /* Dark red color for emphasis */
+    color: #721c24;
 }
 
 .delete-message {
@@ -730,7 +722,7 @@ footer {
 }
 
 .delete-button {
-    background-color: #dc3545; /* Red color for the delete button */
+    background-color: #dc3545;
     border-color: #dc3545;
     color: #ffffff;
     border-radius: 5px;
@@ -744,7 +736,7 @@ footer {
     }
 
 .back-button {
-    background-color: #6c757d; /* Gray color for the back button */
+    background-color: #6c757d;
     border-color: #6c757d;
     color: #ffffff;
     border-radius: 5px;
@@ -759,7 +751,7 @@ footer {
     }
 /* Delete Page Styling for Course */
 .delete-course-container {
-    background-color: #f9e2e2; /* Light pink background for warning */
+    background-color: #e6ffee; 
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -772,7 +764,7 @@ footer {
 .delete-title {
     font-size: 2rem;
     font-weight: bold;
-    color: #a43f4a; /* Dark pink color for emphasis */
+    color: #a43f4a;
 }
 
 .delete-message {
@@ -814,7 +806,7 @@ footer {
 }
 
 .delete-button {
-    background-color: #dc3545; /* Red color for the delete button */
+    background-color: #dc3545;
     border-color: #dc3545;
     color: #ffffff;
     border-radius: 5px;
@@ -828,7 +820,7 @@ footer {
     }
 
 .back-button {
-    background-color: #6c757d; /* Gray color for the back button */
+    background-color: #6c757d;
     border-color: #6c757d;
     color: #ffffff;
     border-radius: 5px;
