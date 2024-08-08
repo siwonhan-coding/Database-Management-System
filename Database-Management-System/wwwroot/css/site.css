@@ -44,3 +44,24 @@ a {
 .text-light:hover{
     background-color: black;
 }
+h1 {
+    color: purple;
+}
+
+.thead-dark {
+    background-color: lightskyblue
+}
+
+a {
+    color: black;
+}
+
+    a:hover {
+        color: yellow;
+        background-color: black;
+        text-decoration: underline;
+    }
+
+tbody:hover {
+    background-color: lightgrey;
+}
