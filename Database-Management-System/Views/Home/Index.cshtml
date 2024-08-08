@@ -2,7 +2,31 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome to Database Management System</h1>
-    <p>This application is build to manage the data of a school. It has student page through which students can register in the school. As well as it has courses page by which students can register for their courses and can tell which courses they have completed. Moreover, one student can apply for multiple courses.</p>
+<div class="container mt-5">
+    <div class="jumbotron text-center text-dark">
+        <h1 class="display-4">Welcome to Database Management System</h1>
+        <p class="lead">This application is built to manage the data of a school. It has a student page where students can register for school, and a courses page where they can register for courses and track completed ones. A student can apply for multiple courses.</p
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body-share">
+                    <h5 class="card-title">Student Registration</h5>
+                    <p class="card-text">Register as a student to enroll in school and start your learning journey.</p>
+                    <a class="btn btn-primary-share" asp-area="" asp-controller="Students" asp-action="Index" >Register Now</a>
+       
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body-share">
+                    <h5 class="card-title">Course Enrollment</h5>
+                    <p class="card-text">Choose from a variety of courses and keep track of your progress.</p>
+                    <a class="btn btn-primary-share" asp-area="" asp-controller="Courses" asp-action="Index">Enroll in Courses</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

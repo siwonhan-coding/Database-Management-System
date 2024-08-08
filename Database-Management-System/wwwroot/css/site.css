@@ -19,49 +19,825 @@ html {
 
 body {
     margin-bottom: 60px;
-    font-family: "Righteous", sans-serif
+    font-family: "Righteous", sans-serif;
+    background-color:lightgrey;
+        
 }
 th > a {
     text-decoration: none;
 }
-
-a {
-    color: #00796B;
+tbody tr:hover {
+    background-color: lightgrey;
+}
+/*newly aded*/
+.jumbotron{
+    color: blue;
+}
+.lead{
+    color: blue;
+    font-size: 4vmin;
 }
 
-.btn-primary {
-    background-color: #B2DFDB;
-    color: black;
-}
-
-.navbar-dark {
-    background-color: #009688;
-}
-
-.text-light {
-    color: #CDDC39;
-}
-.text-light:hover{
+.display-4{
+    color: yellow;
+    border: 3px solid black;
     background-color: black;
+    border-radius: 20px;
 }
-h1 {
-    color: purple;
+    .display-4:hover {
+        color: purple;
+        background-color: lightgrey;
+    }
+    .card-body-share{
+        border: 4px solid black;
+        padding: 20px;
+        border-radius: 20px;
+
+    }
+    .card-body-share:hover{
+        background-color:lightgreen;
+        color: navy;
+    }
+    .btn-primary-share{
+        border: 3px double black;
+        border-radius: 20px;
+    }
+.btn-primary-share:hover{
+    background-color:black;
+    color: greenyellow;
+}
+.navbar {
+    background-color: #007bff;
+    padding: 15px;
 }
 
-.thead-dark {
-    background-color: lightskyblue
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
 }
 
-a {
+.nav-link {
+    color: #ffffff;
+    font-weight: 600;
+    font-size:large;
+    transition: color 0.2s;
+}
+
+    .nav-link:hover {
+        color: #ffc107 !important;
+        text-decoration:underline;
+    }
+
+/* Main Content Styling */
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    border-top: 3px solid #0056b3;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+    footer a {
+        color: black;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+
+        footer a:hover {
+            color: blue;
+            text-decoration:underline;
+        }
+
+    footer p {
+        margin: 10px 0;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #004085;
+    }
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+}
+/*Student index page*/
+/* Student Page Styling */
+.student-page-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.student-page-title {
+    font-size: 3.5rem;
+    font-weight: bolder;
     color: black;
+    margin-bottom: 20px;
 }
 
-    a:hover {
+.student-register-button {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+    .student-register-button:hover{
+        background-color:black;
         color: yellow;
+        text-decoration:underline;
+    }
+
+    .student-table {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+.student-table-head th {
+    background-color: #007bff;
+    color: white;
+    font-weight: 900;
+    text-align: left;
+    padding: 10px;
+}
+
+.student-table-link {
+    color: wheat;
+    text-decoration: underline;
+}
+    .student-table-link:hover{
+        background-color:black;
+        color: orangered;
+    }
+
+
+    .student-table-actions a {
+        margin: 0 5px;
+    }
+
+    .student-table-actions .btn:hover {
+        text-decoration:underline;
+        background-color:black;
+        color: lightgreen;
+    }
+/* Course Page Styling */
+.course-page-container {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.course-page-title {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.course-register-button {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+    .course-register-button:hover {
         background-color: black;
+        color: yellow;
         text-decoration: underline;
     }
 
-tbody:hover {
-    background-color: lightgrey;
+.course-table {
+    width: 100%;
+    margin-top: 20px;
 }
+
+.course-table-head th {
+    background-color: #28a745;
+    color: white;
+    font-weight: 900;
+    text-align: left;
+    padding: 10px;
+}
+
+.course-table-link {
+    color: yellow;
+    text-decoration: underline;
+}
+
+    .course-table-link:hover {
+        background-color: black;
+        color: orangered;
+    }
+
+
+.course-table-actions a {
+    margin: 0 5px;
+}
+
+.course-table-actions .btn:hover {
+    text-decoration: underline;
+    background-color: black;
+    color: lightgreen;
+}
+/* Student Registration Page Styling */
+.student-register-container {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.student-register-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.student-form-group {
+    margin-bottom: 15px;
+}
+
+.student-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.student-input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.student-validation-summary {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.student-validation {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.student-register-button {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.student-back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+    .student-back-link:hover {
+        text-decoration: underline;
+    }
+/* Course Registration Page Styling */
+.course-register-container {
+    background-color: #f0f8ff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.course-register-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.course-form-group {
+    margin-bottom: 15px;
+}
+
+.course-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.course-input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.course-form-group-check {
+    margin-bottom: 15px;
+}
+
+.course-check-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.course-check-input {
+    margin-right: 10px;
+}
+
+.course-validation-summary {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.course-validation {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.course-register-button {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.course-back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #28a745;
+    text-decoration: none;
+}
+
+    .course-back-link:hover {
+        text-decoration: underline;
+    }
+/* Student Edit Page Styling */
+.student-edit-container {
+    background-color: #e6f7ff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.student-edit-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.student-number {
+    font-size: 1.2rem;
+    color: #343a40;
+    margin-bottom: 15px;
+}
+
+.student-form-group {
+    margin-bottom: 15px;
+}
+
+.student-label {
+    font-weight: bold;
+    color: #495057;
+}
+
+.student-input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.student-validation-summary {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffcccc;
+    color: #721c24;
+}
+
+.student-validation {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.student-save-button {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 600;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.student-back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+    .student-back-link:hover {
+        text-decoration: underline;
+    }
+/* Course Edit Page Styling */
+.course-edit-container {
+    background-color: #f7e6ff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.course-edit-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #6f42c1;
+    margin-bottom: 20px;
+}
+
+.course-number {
+    font-size: 1.2rem;
+    color: #343a40;
+    margin-bottom: 15px;
+}
+
+.course-form-group {
+    margin-bottom: 15px;
+}
+
+.course-label {
+    font-weight: bold;
+    color: #495057;
+}
+
+.course-input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.course-form-check {
+    margin-bottom: 15px;
+}
+
+.course-check-label {
+    font-weight: bold;
+    color: #495057;
+}
+
+.course-check-input {
+    margin-right: 5px;
+}
+
+.course-validation-summary {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f7d7ff;
+    color: #721c24;
+}
+
+.course-validation {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.course-save-button {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 600;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.course-back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #6f42c1;
+    text-decoration: none;
+}
+
+    .course-back-link:hover {
+        text-decoration: underline;
+    }
+/* Student Details Page Styling */
+.student-details-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.student-details-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.student-number {
+    font-size: 1.2rem;
+    color: #343a40;
+    margin-bottom: 15px;
+}
+
+.student-details-list dt {
+    font-weight: bold;
+    color: #6c757d;
+}
+
+.student-detail-label {
+    font-size: 1rem;
+}
+
+.student-detail-value {
+    font-size: 1rem;
+    color: #495057;
+    padding-left: 10px;
+}
+
+.student-details-actions {
+    margin-top: 20px;
+}
+
+    .student-details-actions .btn {
+        margin-right: 10px;
+    }
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #004085;
+    }
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+    .btn-secondary:hover {
+        background-color: #5a6268;
+        border-color: #545b62;
+    }
+/* Course Details Page Styling */
+.course-details-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.course-details-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #28a745; /* Green color to reflect a positive view */
+    margin-bottom: 20px;
+}
+
+.course-number {
+    font-size: 1.2rem;
+    color: #343a40;
+    margin-bottom: 15px;
+}
+
+.course-details-list dt {
+    font-weight: bold;
+    color: #6c757d;
+}
+
+.course-detail-label {
+    font-size: 1rem;
+}
+
+.course-detail-value {
+    font-size: 1rem;
+    color: #495057;
+    padding-left: 10px;
+}
+
+.course-details-actions {
+    margin-top: 20px;
+}
+
+    .course-details-actions .btn {
+        margin-right: 10px;
+    }
+
+.btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+    .btn-primary:hover {
+        background-color: #218838;
+        border-color: #1e7e34;
+    }
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+    .btn-secondary:hover {
+        background-color: #5a6268;
+        border-color: #545b62;
+    }
+/* Delete Page Styling */
+.delete-confirmation-container {
+    background-color: #f8d7da; /* Light red background for warning */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.delete-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #721c24; /* Dark red color for emphasis */
+}
+
+.delete-message {
+    font-size: 1.5rem;
+    color: #721c24;
+    margin-bottom: 20px;
+}
+
+.student-details {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.student-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.student-details-list dt {
+    font-weight: bold;
+    color: #6c757d;
+}
+
+.student-detail-label {
+    font-size: 1rem;
+}
+
+.student-detail-value {
+    font-size: 1rem;
+    color: #495057;
+    padding-left: 10px;
+}
+
+.delete-form {
+    margin-top: 20px;
+}
+
+.delete-button {
+    background-color: #dc3545; /* Red color for the delete button */
+    border-color: #dc3545;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+    .delete-button:hover {
+        background-color: #c82333;
+        border-color: #bd2130;
+    }
+
+.back-button {
+    background-color: #6c757d; /* Gray color for the back button */
+    border-color: #6c757d;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+    .back-button:hover {
+        background-color: #5a6268;
+        border-color: #545b62;
+    }
+/* Delete Page Styling for Course */
+.delete-course-container {
+    background-color: #f9e2e2; /* Light pink background for warning */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.delete-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #a43f4a; /* Dark pink color for emphasis */
+}
+
+.delete-message {
+    font-size: 1.5rem;
+    color: #a43f4a;
+    margin-bottom: 20px;
+}
+
+.course-details {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.course-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.course-details-list dt {
+    font-weight: bold;
+    color: #6c757d;
+}
+
+.course-detail-label {
+    font-size: 1rem;
+}
+
+.course-detail-value {
+    font-size: 1rem;
+    color: #495057;
+    padding-left: 10px;
+}
+
+.delete-form {
+    margin-top: 20px;
+}
+
+.delete-button {
+    background-color: #dc3545; /* Red color for the delete button */
+    border-color: #dc3545;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+    .delete-button:hover {
+        background-color: #c82333;
+        border-color: #bd2130;
+    }
+
+.back-button {
+    background-color: #6c757d; /* Gray color for the back button */
+    border-color: #6c757d;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+    .back-button:hover {
+        background-color: #5a6268;
+        border-color: #545b62;
+    }

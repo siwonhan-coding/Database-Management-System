@@ -4,50 +4,54 @@
     ViewData["Title"] = "Register";
 }
 
-<h1>Register</h1>
+<div class="student-register-container">
+    <h1 class="student-register-title">Student Registration</h1>
 
-<h4>Student</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="StudentNumber" class="control-label"></label>
-                <input asp-for="StudentNumber" class="form-control" />
-                <span asp-validation-for="StudentNumber" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="StudentName" class="control-label"></label>
-                <input asp-for="StudentName" class="form-control" />
-                <span asp-validation-for="StudentName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ProgramName" class="control-label"></label>
-                <input asp-for="ProgramName" class="form-control" />
-                <span asp-validation-for="ProgramName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="RegistrationDate" class="control-label"></label>
-                <input asp-for="RegistrationDate" class="form-control" />
-                <span asp-validation-for="RegistrationDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="StudentEmail" class="control-label"></label>
-                <input asp-for="StudentEmail" class="form-control" />
-                <span asp-validation-for="StudentEmail" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Register" class="btn btn-primary" />
-            </div>
-        </form>
+    <h4>Student Details</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger student-validation-summary"></div>
+                <div class="form-group student-form-group">
+                    <label asp-for="StudentNumber" class="control-label student-label"></label>
+                    <input asp-for="StudentNumber" class="form-control student-input" />
+                    <span asp-validation-for="StudentNumber" class="text-danger student-validation"></span>
+                </div>
+                <div class="form-group student-form-group">
+                    <label asp-for="StudentName" class="control-label student-label"></label>
+                    <input asp-for="StudentName" class="form-control student-input" />
+                    <span asp-validation-for="StudentName" class="text-danger student-validation"></span>
+                </div>
+                <div class="form-group student-form-group">
+                    <label asp-for="ProgramName" class="control-label student-label"></label>
+                    <input asp-for="ProgramName" class="form-control student-input" />
+                    <span asp-validation-for="ProgramName" class="text-danger student-validation"></span>
+                </div>
+                <div class="form-group student-form-group">
+                    <label asp-for="RegistrationDate" class="control-label student-label"></label>
+                    <input asp-for="RegistrationDate" class="form-control student-input" />
+                    <span asp-validation-for="RegistrationDate" class="text-danger student-validation"></span>
+                </div>
+                <div class="form-group student-form-group">
+                    <label asp-for="StudentEmail" class="control-label student-label"></label>
+                    <input asp-for="StudentEmail" class="form-control student-input" />
+                    <span asp-validation-for="StudentEmail" class="text-danger student-validation"></span>
+                </div>
+                <div class="form-group student-form-group">
+                    <input type="submit" value="Register" class="btn btn-primary student-register-button" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index" class="student-back-link">Back to List</a>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
