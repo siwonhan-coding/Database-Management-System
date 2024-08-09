@@ -209,6 +209,7 @@ footer {
     font-size: 1.1rem;
     font-weight: 600;
     padding: 10px 20px;
+    background-color:green;
 }
 
     .course-register-button:hover {
