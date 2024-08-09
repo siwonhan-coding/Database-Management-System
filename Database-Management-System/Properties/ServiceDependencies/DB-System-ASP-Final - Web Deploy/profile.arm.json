@@ -21,7 +21,7 @@
     },
     "resourceName": {
       "type": "string",
-      "defaultValue": "DB-System-ASP",
+      "defaultValue": "DB-System-ASP-Final",
       "metadata": {
         "description": "Name of the main resource to be created by this template."
       }
