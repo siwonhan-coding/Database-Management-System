@@ -6,11 +6,12 @@
 
 <div class="student-page-container">
     <h1 class="student-page-title">Register</h1>
-
-    <p>
-        <a asp-action="Create" class="btn btn-primary student-register">Register Here</a>
-    </p>
-
+    @if (User.Identity.IsAuthenticated)
+    {
+        <p>
+            <a asp-action="Create" class="btn btn-primary student-register">Register Here</a>
+        </p>
+    }
     <table class="table table-striped table-hover sortable student-table">
         <thead class="student-table-head">
             <tr>

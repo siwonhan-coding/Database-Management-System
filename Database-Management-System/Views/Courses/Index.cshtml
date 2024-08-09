@@ -6,11 +6,12 @@
 
 <div class="course-page-container">
     <h1 class="course-page-title">Register for a Course</h1>
-
-    <p>
-        <a asp-action="Create" class="btn btn-primary course-register-button">Register Here</a>
-    </p>
-
+    @if (User.Identity.IsAuthenticated)
+    {
+        <p>
+            <a asp-action="Create" class="btn btn-primary course-register-button">Register Here</a>
+        </p>
+    }
     <table class="table table-striped table-hover sortable course-table">
         <thead class="course-table-head">
             <tr>
